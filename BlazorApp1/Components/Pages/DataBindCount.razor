@@ -1,0 +1,37 @@
+@page "/databindcount"
+@rendermode InteractiveServer
+
+<PageTitle>Data Binding</PageTitle>
+
+<h1>Data Bind Count</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me.</button>
+
+@* comment code *@
+@*The bind attribute replaces having to onchange to input text and onclick to clear the text by binding the state/data of the input
+to text *@
+
+<div class="mt-3">
+    <input @bind="text" @bind:event="oninput" @bind:after="Search">
+    <button @onclick="OnClick">Clear</button>
+    <p>@text</p>
+    <p>@searchResult</p>
+</div>
+
+@code{
+    private int currentCount = 0;
+
+    string text = "";
+    string searchResult = "";
+    private void IncrementCount(MouseEventArgs e) => currentCount++;
+
+    private void OnClick(MouseEventArgs e) => text = "";
+
+    async Task Search(){
+        searchResult = "Searching...";
+        await Task.Delay(2000);
+        searchResult = $"Found {Random.Shared.Next()} results!";
+    }
+}
