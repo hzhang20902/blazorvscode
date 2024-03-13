@@ -26,10 +26,8 @@
 @code {
     private int currentCount = 0;
 
-        protected override void OnInitialized()
-        {
-            currentCount = InitialCount;
-        }
+    //Lambda function works the same as arrow function, essentially
+    protected override void OnInitialized() => currentCount = InitialCount;
 
     [Parameter]
     public int InitialCount {get;set;}

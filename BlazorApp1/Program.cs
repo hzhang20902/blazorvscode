@@ -21,6 +21,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
+//mapping root component of the routing
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
