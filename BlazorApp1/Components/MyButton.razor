@@ -1,0 +1,14 @@
+<button @onclick="OnClick" @attributes="AdditionalAttributes">@ChildContent</button>
+@code {
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+
+
+    //this is the equivalent of props in React and making a custom component then passing the specific context for use case
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    //this enables HTML attributes like class within custom components
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> AdditionalAttributes { get; set; }
+}
