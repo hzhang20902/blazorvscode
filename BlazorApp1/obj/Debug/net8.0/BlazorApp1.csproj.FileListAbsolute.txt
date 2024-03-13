@@ -27,3 +27,4 @@ c:\Users\hzhang\OneDrive - iWorks Corporation\Documents\iworks Dev UI\blazorapp1
 c:\Users\hzhang\OneDrive - iWorks Corporation\Documents\iworks Dev UI\blazorapp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
 c:\Users\hzhang\OneDrive - iWorks Corporation\Documents\iworks Dev UI\blazorapp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
 c:\Users\hzhang\OneDrive - iWorks Corporation\Documents\iworks Dev UI\blazorapp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\hzhang\OneDrive - iWorks Corporation\Documents\iworks Dev UI\blazorapp1\Blazorapp1\obj\Debug\net8.0\BlazorApp1.sourcelink.json
