@@ -1,0 +1,61 @@
+@page "/demo"
+
+<PageTitle>Home Page Demo</PageTitle>
+
+    <div class="home-overlay" id="overlay"></div>
+
+    <div id="consent-popup" class="home-popup">
+        <div class="popup-content">
+        <h2>Standard Mandatory DoD Notice and Consent</h2>
+        <p>
+            You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+            By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+            </p>
+        <ul style="list-style-type:disc">
+            <li>The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.</li>
+            <li>At any time, the USG may inspect and seize data stored on this IS.</li>
+            <li>Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG authorized purpose.</li>
+            <li>This IS includes security measures (e.g., authentication and access controls) to protect USG interests - not for your personal benefit or privacy.</li>
+            <li>Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.</li>
+            <li>Department of Defense (DOD) policy prohibits the use of web technology which collects user-identifying information such as extensive lists of previously visited sites, e-mail addresses, or other information to identify or build profiles on individual visitors to DOD publicly accessible web sites.</li>
+            <li>DOD policy, however, does permit the use of "cookies" or other web technology to collect or store non-user identifying information but only if users are advised of what information is collected or stored, why it is being done, and how it is to be used. This policy will be clarified to make clear that "persistent cookies" (i.e., those that can be used to track users over time and across different web sites) are authorized only when there is a compelling need to gather the data on the site; appropriate technical procedures have been established to safeguard the data; and the Secretary of Defense has personally approved use of the cookie.</li>
+        </ul>
+            <button id="consent-button">I Agree</button>
+        </div>
+    </div>
+
+
+<div class="home-page-background">
+    <div class="content">
+        <div class="home-info">
+            <p><b>Explore the Capabilities of Generative Artificial Intelligence </b></p>
+            <p>This demonstration provides a glimpse into the versatility and efficiency of integrating cutting-edge technology to support NATO’s Joint Analysis & Lessons Learned Centre, designed specifically to cater to its internal users’ and stakeholders' needs.</p>
+            
+            <p>"AskJALLC" is an AI-powered Chatbot designed to provide contextual answers and guidance based on the user’s choices. Simply ask your questions, and AskJALLC will provide relevant responses to assist you in understanding and interpreting the content.</p>
+            <p><br />Experience firsthand the potential of Generative Artificial Intelligence and see how this innovative solution streamlines document management, provides easy access to critical information, and empowers our stakeholders.</p>
+        </div>
+
+        <div class="home-options">
+            @* <a asp-action="SearchHome"><button id="index-search-submit" class="btn btn-default" type="submit"><span class="ms-Icon ms-Icon--Search"></span><span class="search-home-label">Search</span></button></a>*@
+            <a asp-action="ChatJALLC"><button id="chatbot-submit" class="btn btn-default" type="submit"><span class="ms-Icon ms-Icon--Robot"></span> <span class="chatbot-home-label">AskJALLC</span></button></a>
+        </div>
+    </div>
+</div>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const consentPopup = document.getElementById("consent-popup");
+            const consentButton = document.getElementById("consent-button");
+            const overlay = document.getElementById("overlay");
+
+            consentButton.addEventListener("click", function() { // enable
+                consentPopup.style.display = "none";
+                overlay.style.display = "none";
+                document.querySelector(".home-page-background").style.pointerEvents = "auto";
+            });
+
+            consentPopup.style.display = "block"; //disable
+            overlay.style.display = "block";
+            document.querySelector(".home-page-background").style.pointerEvents = "none";
+        });
+    </script>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\Blazorapp1\\BlazorApp1.csproj": {}
+    "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\Blazorapp1\\BlazorApp1.csproj": {
+    "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\Blazorapp1\\BlazorApp1.csproj",
+        "projectUniqueName": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\Blazorapp1\\BlazorApp1.csproj",
+        "projectPath": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\BlazorApp1\\BlazorApp1.csproj",
         "packagesPath": "C:\\Users\\hzhang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\Blazorapp1\\obj\\",
+        "outputPath": "C:\\Users\\hzhang\\OneDrive - iWorks Corporation\\Documents\\iworks Dev UI\\blazorapp1\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hzhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
